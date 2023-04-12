@@ -1,0 +1,367 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.nav{
+background-color: rgb(218, 53, 83)  ;
+color: aqua;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.logo
+ {
+
+text-transform: uppercase;
+font-family: cursive;
+padding: 10px 30px;
+letter-spacing: 2px;
+font-size: 35;
+cursor: pointer ;
+
+}
+.navlinks{
+  float: right;
+  padding-right: 30px;
+  cursor: pointer;
+} 
+.navlinks ul li{
+display: inline-block;
+padding-right: 30px;
+cursor: pointer;
+}
+.navlinks ul li a{
+
+text-decoration: none;
+color: white;
+font-size: 17;
+cursor: pointer;
+text-transform: uppercase;
+}
+.navborder::after
+{
+ content:"";
+ width:0;
+ height:2px;
+ display:block;
+ background-color: aqua;
+ transition: width 0.3s ease;
+}
+.navborder:hover::after
+{
+  width: 100%;
+}
+.container
+{
+background-image: url(../img/pizza.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+flex-direction: column;
+height:100%;
+height: 695px;
+text-align:center;
+}
+.container h1{ 
+
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: rgb(121, 35, 94);
+   
+} 
+.container p{
+color: rgb(213, 235, 235);
+padding-top: 50px;
+padding: 2rem;
+line-height: 1.2;
+font-family:cursive ;
+letter-spacing: 4px;
+margin-bottom: 20px;
+font-size: 30px;
+
+}
+.order{
+  background-color: rgb(192, 41, 46);
+  padding: 15px 10px;
+  border:none;
+  font-size: 15;
+  border-radius: 3px;
+  margin-top: 60px;
+  transition: 0.2s ease;
+}
+.order a{
+  text-decoration: none;
+  color: rgb(209, 222, 222);
+}
+.order:hover{
+
+  padding: 20px 15px;
+}
+.container2{
+ 
+  margin: 30px 20px;
+  border: 2px solid crimson;
+  background-color: rgb(192, 167, 172) 
+}
+.pizza{
+  padding: 30px 60px;
+  margin: 10px 0 0 40px;
+  
+  
+}
+.container2 h1{
+  color: crimson;
+ font-family: cursive;
+  text-align: center;
+  padding-top: 30px;
+  background-color: rgb(104, 84, 88);
+  font-size: 40px;
+}
+.container2 h3{
+  color: crimson;
+  
+}
+.aboutmyfood{
+  font-family:cursive;
+  font-size: 16px;
+  display:flex;
+  float: right;
+  margin-right: 10px;
+  margin:50px 100px 0 0 
+}
+.container3{
+  border: 2px solid crimson;
+  margin: 30px 20px;
+  padding-bottom:150px;
+  background-color: rgb(125, 162, 170)  
+
+}
+.container3 h1{
+  font-family: cursive;
+  font-size: 40px;
+  text-align: center;
+  color: crimson;
+  margin-top: 15px;
+  background-color: rgb(125, 162, 170)  
+}
+
+.combos{
+  display: flex;
+  align-items: center;
+ 
+  justify-content: space-around;
+  margin-top: 80px;
+  background-color: rgb(125, 162, 170)  
+}
+.combos h2{
+  color: crimson;
+  
+
+}
+.combo1,.combo2,.combo3{
+  border:2px solid crimson;
+  padding: 20px 30px;
+  text-align: center;
+  background-color: rgb(125, 162, 170)  
+}
+.combos ul li{
+  list-style-type: none;
+  line-height: 40px;
+   
+}
+.buy{
+  margin-top: 30px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: crimson;
+  transition: 0.2s ease;
+
+}
+.buy a{
+  background-color: white;
+  text-decoration: none;
+}
+.buy:hover{
+  background-color: crimson;
+
+}.contact {
+  background-color: bisque;
+  border: 2px solid crimson;
+  margin: 30px 2opx;
+  text-align: center;
+}
+
+.contact h1{
+  padding-top: 30px;
+  font-family: cursive;
+  font-size: 40px;
+  color: crimson;
+
+}
+.form{
+  display: grid;
+  align-items: center; 
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding:50px;
+}
+input[type=text]
+{
+  margin: 10px auto 30px auto;
+  width: 400px;
+  padding: 7px 5px;
+  border: 2px solid crimson;
+  border-radius: 3px;
+
+}
+input[type=email]
+{
+  margin: 10px auto 30px auto;
+  width: 400px;
+  padding: 7px 5px;
+  border: 2px solid crimson;
+  border-radius: 3px;
+}
+input[type=number]
+{
+  margin: 10px auto 30px auto;
+  width: 400px;
+  padding: 7px 5px;
+  border: 2px solid crimson;
+  border-radius: 3px;
+}
+.form textarea {
+  margin: 10px auto 30px auto;
+  width: 400px;
+  height: 250px;
+  padding: 7px 5px;
+  border: 2px solid crimson;
+  border-radius: 3px;
+}
+.query
+{
+  padding: 10px;
+  background-color: crimson;
+  border: none;
+  border-radius: 3px;
+  transition: 0.2 s ease;
+}
+.query a{
+  color: white;
+  text-decoration: none;
+
+}
+.query:hover {
+  background-color: rgb(180, 23, 47);
+
+}
+.footer{
+  display: flex;
+  padding:50px ;
+ align-items: center;
+ background-color: rgb(162, 16, 33);
+ justify-content: space-around;
+ }
+ 
+ .footer1 h1,.footer2 h2,.footer3 h2,.credit p{
+   color: rgb(245, 242, 250);
+ 
+ }
+ .footer2 ul,.footer3 ul{
+   margin-top: 20px;
+   list-style-type:none; 
+ 
+ 
+ }
+ .footer2 ul li a,.footer3 ul li a
+ {
+   color: rgb(16, 191, 240);
+   text-decoration:none; 
+   transition: 0.2s ease;
+ }
+ .footer2 ul li a:hover,.footer3 ul li a:hover{
+   color: rgb(193, 178, 178);
+ }
+ .footer2 ul li,.footer3 ul li{
+  margin-top: 10px;
+  display: block;
+ }
+ .main{
+  background-color: rgb(202, 163, 115);
+ }
+ .dejuk{
+
+  padding: 10rem;
+ }
+ #db{
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
+ }
+ #bd
+{
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
+
+}
+.a h2{
+  font-size: 30px;
+  font-family: monospace;
+  color: rgb(70, 18, 18);
+}
+.a p{
+  font-size: 15px;
+  font-family: cursive;
+  color: black;
+}
+.b h2{
+  font-size: 30px;
+  font-family: monospace;
+  color: rgb(70, 18, 18);
+}
+.b p{
+  font-size: 15px;
+  font-family: cursive;
+  color: black;
+}
+
+.c h2{
+  font-size: 30px;
+  font-family: monospace;
+  color: rgb(70, 18, 18);
+}
+.c p{
+  font-size: 15px;
+  font-family: cursive;
+  color: black;
+}
+
+.d h2{
+  font-size: 30px;
+  font-family: monospace;
+  color: rgb(70, 18, 18);
+}
+.d p{
+  font-size: 15px;
+  font-family: cursive;
+  color: black;
+}
+.btn{
+  padding: 3rem;
+}
+#ho{
+  font-size: 120%;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+
+ 
+
+ 
